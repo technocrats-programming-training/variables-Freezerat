@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Compilation Test",
+      "setup": "",
+      "run": "javac Main.java",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run Test",
+      "setup": "rm -rf ./*.class",
+      "run": "java Main.java Will Dirkswager 18 2004 2023",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Accuracy Test #1",
+      "setup": "rm -rf ./*.class",
+      "run": "java Main.java Will Dirkswager 18",
+      "input": "",
+      "output": "Hello, I am Will Dirkswager, and I am 18 years old\r\ntrue\r\nfalse\r\ntrue",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Accuracy Test #2",
+      "setup": "rm -rf ./*.class",
+      "run": "java Main.java Jeremy Smith 21",
+      "input": "",
+      "output": "Hello, I am Jeremy Smith, and I am 21 years old\r\nfalse\r\nfalse\r\ntrue",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Accuracy Test #3",
+      "setup": "rm -rf ./*.class",
+      "run": "java Main.java Tom Tom 10",
+      "input": "",
+      "output": "Hello, I am Tom Tom, and I am 10 years old\r\ntrue\r\ntrue\r\ntrue",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}

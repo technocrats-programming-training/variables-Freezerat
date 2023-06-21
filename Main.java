@@ -13,11 +13,11 @@ public class Main {
          boolean age3;
          int age2;
          boolean isAgeEven;
-         areNamesSame = firstName == lastName;
+         areNamesSame = firstName.equals(lastName);
          age2 = age % 2; 
            isAgeEven = 0 == age2;
          age3 = age > 0; 
-        System.out.print("Hello, I am " +firstName+ " " +lastName+ "and I am " +age+ " " + "years old, is my age even? " +isAgeEven+ "is my age greater than zero? " +age3+ " are my first and last names the same? " +areNamesSame );
+        System.out.print("Hello, I am " +firstName+ " " +lastName+ " and I am " +age+ " " + "years old, is my age even? " +isAgeEven+ "is my age greater than zero? " +age3+ " are my first and last names the same? " +areNamesSame );
         
        
          

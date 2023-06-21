@@ -1,5 +1,5 @@
 language = "java10"
-run = "java Main.java Carter  Malbraaten 14"
+run = "java Main.java Carter Malbraaten 14"
 entrypoint = "Main.java"
 hidden = ["**/*.class"]
 compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
